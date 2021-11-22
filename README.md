@@ -25,7 +25,8 @@ Ao executar o módulo Terraform via `terraform apply`, a configuração do
 
 ## Requisitos
 
-- Python versão 3.x
+- Python versão 3.6.13 ou maior
+- `pip` versão 21.3.1 ou maior
 - Terraform versão 0.15 ou maior
 
 ## Como utilizar
@@ -38,14 +39,20 @@ Ao executar o módulo Terraform via `terraform apply`, a configuração do
 1.2 - Listar as Networklists e coletar o ID
  - https://www.azion.com/pt-br/documentacao/produtos/api/v3/network-lists/
 
-2 - Terraform e Python
+2 - Python
 
 2.1 - Alterar as variáveis `authorization` e `id` no arquivo `azion_border.py`
 
 * preencher o valor de `authorization` com a instruções 1.1;
 * preencher o `id` com as instruções 1.2;
 
-2.1 Aplicar o módulo Terraform
+2.2 - Instalar módulos Python requeridos:
+
+```
+pip install -r requirements.txt
+```
+
+3 - Aplicar o módulo Terraform
 
 ```
 terraform init
