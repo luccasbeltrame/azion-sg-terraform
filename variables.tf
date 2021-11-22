@@ -4,6 +4,6 @@ variable "items_values" {
 }
 
 variable "vpc_id" {
-  default = ""
+  default     = ""
   description = "Vpc Default"
 }
